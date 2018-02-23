@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Sniglet');
+
+html,
+body {
+  width: auto;
+  margin-left: 0;
+  margin-bottom: 0;
+  overflow-x: hidden;
+  background-color: #FFF7E8;
+  color: #222222;
+}
+
+body {
+  width: 100%;
+  margin-top: -1.2em;
+  padding-top: 1em;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.contentWrapper {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.centerWrapper {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.centerImage {
+  margin: auto;
+  margin-top: 3em;
+  width: 90%;
+  max-width: 900px;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+  background: #312431;
+  color: #EDD29E;
+  border-top: 5px solid #EDD29E;
+  font-family: 'Sniglet', sans-serif;
+}
+
+footer p {
+  margin: 0;
+  margin-top: .5em;
+  padding: 0;
+}
+
+footer h2 {
+  margin-top: .2em;
+}
+
+iframe {
+  margin: 1em;
+  margin-bottom: 10em;
+  box-shadow: 0px 0px 40px rgba(0,0,0,.5);
+}
