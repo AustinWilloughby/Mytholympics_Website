@@ -42,6 +42,7 @@ footer {
   border-top: 5px solid #EDD29E;
   font-family: 'Sniglet', sans-serif;
   visibility: hidden;
+  margin-top: 5em;
 }
 
 footer p {
@@ -76,14 +77,10 @@ footer h2 {
 
 .stackingParent {
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .stackingBottom {
   position: absolute;
-  top: 135px;
-  left: 134px;
   z-index: 0;
 }
 
