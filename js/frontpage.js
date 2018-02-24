@@ -27,7 +27,7 @@ let logoDrawingHeight = 0;
     handleScreenResize();
   }, false);
 
-  logo.src = "../img/Title.gif";
+  logo.src = "/img/Title.gif";
 })());
 
 
