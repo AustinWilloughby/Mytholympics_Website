@@ -37,7 +37,8 @@ window.onfocus = handleScreenResize;
 
 //Resizes elements on the screen based on the size of the window for a responsive design.
 function handleScreenResize() {
-  let bodyWidth = $("body").innerWidth();
+  let bodyWidth = document.body.clientWidth;
+
 
   //Canvas Resizing
   logoCtx.imageSmoothingEnabled = false;

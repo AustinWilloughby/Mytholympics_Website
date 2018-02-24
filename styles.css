@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Sniglet');
+
 html,
 body {
   width: auto;
@@ -40,7 +41,7 @@ footer {
   background: #312431;
   color: #EDD29E;
   border-top: 5px solid #EDD29E;
-  font-family: 'Sniglet', sans-serif;
+  font-family: 'Sniglet', cursive;
   visibility: hidden;
   margin-top: 5em;
 }
