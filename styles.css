@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Sniglet');
 
+/* ----------Large objects---------- */
+
 html,
 body {
   width: auto;
@@ -7,7 +9,7 @@ body {
   margin-bottom: 0;
   overflow-x: hidden;
   background-color: #FFF7E8;
-  color: #222222;
+  color: #312431;
 }
 
 body {
@@ -30,6 +32,11 @@ body {
   max-width: 900px;
 }
 
+
+
+
+/* ----------Footer---------- */
+
 footer {
   position: absolute;
   left: 0px;
@@ -44,12 +51,15 @@ footer {
   font-family: 'Sniglet', cursive;
   visibility: hidden;
   margin-top: 5em;
+  padding-bottom: 0.3em;
 }
 
 footer p {
+  font-size: 1em;
   margin: 0;
   margin-top: .5em;
   padding: 0;
+  padding-top: .3em;
 }
 
 footer h2 {
@@ -57,15 +67,33 @@ footer h2 {
   margin-top: .2em;
 }
 
+footer img {
+  float: right;
+}
+
+#footerContainer {
+  width: 300px;
+  margin: auto;
+}
+
+
+/* ----------Survey---------- */
+
 #survey {
   margin: 1em;
   margin-bottom: 10em;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
 }
 
+
+/* ----------Front Page Logo---------- */
+
 #logoCanvas {
   margin-top: 2em;
 }
+
+
+/* ----------Video and Border Stacking---------- */
 
 .stackingContainer {
   margin: 0 auto;
@@ -91,4 +119,36 @@ footer h2 {
   top: 0px;
   left: 0px;
   z-index: 1;
+}
+
+
+/* ----------Elements---------- */
+
+p {
+  font-family: 'Sniglet', cursive;
+  font-size: 1.5em;
+  margin-top: -1em;
+  font-weight: bold;
+}
+
+/* unvisited/visited link */
+
+a:link,
+a:visited {
+  color: #312431;
+  text-decoration: none;
+  border-bottom: 0px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+/* mouse over link */
+
+a:hover {
+  color: #312431;
+  border-bottom: 4px solid #312431;
+  transition: border-bottom 0.2s;
+}
+
+a:active {
+  color: #312431;
 }
