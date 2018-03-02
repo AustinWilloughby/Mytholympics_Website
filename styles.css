@@ -55,6 +55,10 @@ footer {
   visibility: hidden;
   margin-top: 10px;
   padding-bottom: 0.3em;
+  text-shadow: -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
 footer p {

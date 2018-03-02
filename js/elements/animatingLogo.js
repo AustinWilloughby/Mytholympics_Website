@@ -13,6 +13,7 @@ let logoDrawingHeight = 0;
 //IFFE for quick image loading
 ((function () {
   handleLogoResize();
+  logoCanvas.addEventListener('click', detectLogoClick);
 
   logo = new Image();
 
@@ -49,4 +50,12 @@ function drawLogo() {
   logoCtx.drawImage(logo, centerX, yPos, width, logoDrawingHeight);
 
   requestAnimationFrame(drawLogo);
-}
+};
+
+function detectLogoClick(e) {
+  let x = e.offsetX;
+  let y = e.offsetY;
+  if (logoCtx.getImageData(x, y, 1, 1).data[3] === 255) {
+    window.location.href = "./";
+  }
+};
