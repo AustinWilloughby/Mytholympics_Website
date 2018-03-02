@@ -2,10 +2,11 @@
 
 let logoCanvas = document.getElementById("logoCanvas");
 let logoCtx = logoCanvas.getContext("2d");
+let inDevText = document.getElementById("inDev");
 
-const LOGO_CANVAS_ASPECT_RATIO = 2.4;
+const LOGO_CANVAS_ASPECT_RATIO = 2.6;
 const LOGO_MAX_WIDTH = 1000;
-const MAX_CANVAS_HEIGHT = (LOGO_MAX_WIDTH * 1.15) / LOGO_CANVAS_ASPECT_RATIO;
+const MAX_CANVAS_HEIGHT = (LOGO_MAX_WIDTH * 1.3) / LOGO_CANVAS_ASPECT_RATIO;
 
 const VIDEO_ASPECT_RATIO = 16 / 9;
 const VIDEO_MAX_WIDTH = 800;
@@ -14,6 +15,7 @@ const VIDEO_FRAME_TO_BORDER_SCALE = 1068 / 800;
 
 let logo;
 let logoDrawingHeight = 0;
+let textSize = 40;
 
 
 //IFFE for quick image loading
@@ -45,8 +47,7 @@ function handleScreenResize() {
   logoCtx.canvas.width = bodyWidth;
 
   let minHeight = Math.min(logoCtx.canvas.width / LOGO_CANVAS_ASPECT_RATIO, MAX_CANVAS_HEIGHT);
-  minHeight = Math.max(minHeight, logoDrawingHeight * 1.1);
-
+  minHeight = Math.max(minHeight, logoDrawingHeight + 20);
   logoCtx.canvas.height = minHeight;
 
   //video iFrame Resizing
@@ -92,7 +93,7 @@ function drawLogo() {
 
   let width = Math.min(LOGO_MAX_WIDTH, logoCtx.canvas.offsetWidth * 0.9);
   let centerX = (logoCtx.canvas.offsetWidth / 2) - (width / 2);
-  let yPos = (Math.sin(Date.now() / 1000) * 4) + 5;
+  let yPos = (Math.sin(Date.now() / 2000) * 10 + 10);
   logoDrawingHeight = width / (logo.width / logo.height);
 
   logoCtx.drawImage(logo, centerX, yPos, width, logoDrawingHeight);
