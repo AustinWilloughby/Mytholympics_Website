@@ -22,6 +22,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .centerImage {
@@ -31,7 +32,10 @@ body {
   max-width: 900px;
 }
 
-
+#postWrapper {
+  margin: auto;
+  width: 542px;
+}
 
 
 /* ----------Footer---------- */
@@ -49,7 +53,7 @@ footer {
   border-top: 5px solid #EDD29E;
   font-family: 'Sniglet', cursive;
   visibility: hidden;
-  margin-top: 5em;
+  margin-top: 10px;
   padding-bottom: 0.3em;
 }
 
@@ -151,3 +155,9 @@ a:hover {
 a:active {
   color: #312431;
 }
+
+#postWrapper iframe {
+  border: none;
+}
+
+;

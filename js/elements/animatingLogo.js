@@ -37,14 +37,6 @@ function handleLogoResize() {
   logoCtx.canvas.height = minHeight;
 };
 
-
-function handleFooterPositioning() {
-  let maxCoord = Math.max(window.innerHeight - 75, document.body.offsetHeight) - 75;
-  document.querySelector("footer").style.top = maxCoord + "px";
-  document.querySelector("footer").style.visibility = "visible";
-};
-
-
 //Draws and animates the logo image at the top of the page
 function drawLogo() {
   logoCtx.clearRect(0, 0, logoCtx.canvas.width, logoCtx.canvas.height);

@@ -23,19 +23,18 @@
     <canvas id="logoCanvas"></canvas>
     <h1>Website In Development!</h1>
 
-    <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/80QCeYZHbqqnNp3PfVBVqA/171440321611" data-did="bf0424cafd7794e22b8fe47fee26a38e5e2a6131"><a href="https://mytholympics.tumblr.com/post/171440321611/blog-up-and-running">https://mytholympics.tumblr.com/post/171440321611/blog-up-and-running</a></div>
-    <script async src="https://assets.tumblr.com/post.js"></script>
+    <div id="postWrapper">
+      <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/80QCeYZHbqqnNp3PfVBVqA/171457561096" data-did="7047738ea9b776bec68811988243eb4ce5e22fa1"><a href="https://mytholympics.tumblr.com/post/171457561096/another-test-post">https://mytholympics.tumblr.com/post/171457561096/another-test-post</a></div>
+
+      <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/80QCeYZHbqqnNp3PfVBVqA/171440321611" data-did="bf0424cafd7794e22b8fe47fee26a38e5e2a6131"><a href="https://mytholympics.tumblr.com/post/171440321611/blog-up-and-running">https://mytholympics.tumblr.com/post/171440321611/blog-up-and-running</a></div>
+
+    </div>
   </div>
 
-  <footer>
-    <div id="footerContainer">
-      <img src="/img/ZAAN_Logo_Invert_Vector.svg" height="60px" onerror="this.src='/img/ZAAN_Logo_Invert_Raster.png'">
-      <p>General @ Mytholympics.com</p>
-      <h2>ZAAN Games &copy; 2018</h2>
-    </div>
-  </footer>
-
-  <script src="js/elements/logoAndFooter.js"></script>
+  <script async src="https://assets.tumblr.com/post.js"></script>
+  <script src='js/dependencies/any-resize-event.min.js'></script>
+  <script src="js/elements/animatingLogo.js"></script>
+  <script src="js/elements/defaultFooter.js"></script>
   <script src="js/pageEventHandlers/blogPageEvents.js"></script>
 </body>
 
