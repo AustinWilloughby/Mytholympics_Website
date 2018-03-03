@@ -1,9 +1,11 @@
+"use strict";
+
 //Hookup Events
 window.onload = handleOnLoad;
 window.onresize = handleScreenResize;
 window.onfocus = handleScreenResize;
 
-
+//Handles the loading of the blog page
 function handleOnLoad() {
   createDefaultFooter();
   handleScreenResize();

@@ -1,5 +1,8 @@
+"use strict";
+
 let footer;
 
+//Creates the default footer to be used at the bottom of the page.
 function createDefaultFooter() {
   footer = document.createElement("footer");
 
@@ -29,6 +32,8 @@ function createDefaultFooter() {
   handleFooterPositioning();
 }
 
+//Positions the footer at the bottom of the screen (if page is small) or at the bottom of
+//the page if the page is longer.
 function handleFooterPositioning() {
   if (footer) {
     let maxCoord = Math.max(window.innerHeight - 80, document.body.offsetHeight) - 80;

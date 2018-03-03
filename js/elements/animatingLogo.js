@@ -12,9 +12,16 @@ let logoDrawingHeight = 0;
 
 //IFFE for quick image loading
 ((function () {
+  //Resize the logo canvas
   handleLogoResize();
-  logoCanvas.addEventListener('click', detectLogoClick);
 
+  //Check if we are on the main page. If not let us click the logo to return there.
+  let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+  if (!fileName.includes("index") && fileName !== "/" && fileName != "") {
+    logoCanvas.addEventListener('click', detectLogoClick);
+  }
+
+  //Load the logo in and set up the animation loop
   logo = new Image();
 
   logo.addEventListener("load", function () {
@@ -25,7 +32,7 @@ let logoDrawingHeight = 0;
   logo.src = "/img/Title.gif";
 })());
 
-
+//Handles resizing the canvas and logo
 function handleLogoResize() {
   let bodyWidth = document.body.clientWidth;
 
@@ -52,9 +59,11 @@ function drawLogo() {
   requestAnimationFrame(drawLogo);
 };
 
+//Checks if the logo has been clicked, and if so navigates to the root (home page)
 function detectLogoClick(e) {
   let x = e.offsetX;
   let y = e.offsetY;
+
   if (logoCtx.getImageData(x, y, 1, 1).data[3] === 255) {
     window.location.href = "./";
   }
