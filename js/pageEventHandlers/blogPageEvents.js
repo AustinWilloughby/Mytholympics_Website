@@ -5,9 +5,14 @@ window.onload = handleOnLoad;
 window.onresize = handleScreenResize;
 window.onfocus = handleScreenResize;
 
+//IFFE for before page loads
+((function () {
+  createDefaultHeader("Dev Blog");
+  createDefaultFooter();
+})());
+
 //Handles the loading of the blog page
 function handleOnLoad() {
-  createDefaultFooter();
   handleScreenResize();
 
   let blogDiv = document.getElementById("postWrapper");

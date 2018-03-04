@@ -2,6 +2,12 @@
 
 var alreadyBig = false;
 
+//IFFE for before page loads
+((function () {
+  createDefaultHeader("Survey");
+  createDefaultFooter();
+})());
+
 document.getElementById('survey').onload = function () {
   handleFooterPositioning();
 
@@ -13,4 +19,8 @@ document.getElementById('survey').onload = function () {
   }
 }
 
-window.onload = createDefaultFooter;
+window.onload = handleOnLoad;
+
+function handleOnLoad() {
+  handleFooterPositioning();
+}

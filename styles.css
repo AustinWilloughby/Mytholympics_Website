@@ -102,6 +102,13 @@ header h2 {
   color: #EDD29E;
 }
 
+.currentPage {
+  color: #EDD29E;
+  text-decoration: none;
+  border: 5px solid #312431;
+  border-radius: 9px;
+}
+
 /* ----------Footer---------- */
 
 footer {

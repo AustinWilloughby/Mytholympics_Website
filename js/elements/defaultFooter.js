@@ -18,7 +18,7 @@ function createDefaultFooter() {
   footerContainer.appendChild(zaanLogo);
 
   let emailParagraph = document.createElement("p");
-  var emailText = document.createTextNode("General @ Mytholympics.com");
+  let emailText = document.createTextNode("General @ Mytholympics.com");
   emailParagraph.appendChild(emailText);
   footerContainer.appendChild(emailParagraph);
 
