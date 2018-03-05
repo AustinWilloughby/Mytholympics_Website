@@ -3,8 +3,12 @@
 let header;
 let pagesAndLinks = [
   {
-    name: "Front Page",
+    name: "The Game",
     link: "./"
+  },
+  {
+    name: "Media",
+    link: "./media.html"
   },
   {
     name: "Dev Blog",

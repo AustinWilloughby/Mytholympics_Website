@@ -29,7 +29,7 @@ let logoDrawingHeight = 0;
     handleScreenResize();
   }, false);
 
-  logo.src = "/img/Title.gif";
+  logo.src = "/img/title.png";
 })());
 
 //Handles resizing the canvas and logo
