@@ -226,7 +226,7 @@ h1 {
   border: 3px solid transparent;
   border-bottom: 3px solid #312431;
   border-radius: 0px;
-  transition: border 0.2s, border-radius 0.2s, color 0.2s;
+  transition: border 0.2s, border-radius 0.6s, background-color 0.4s, color 0.4s;
 }
 
 /* mouse over link */
@@ -237,7 +237,7 @@ h1 {
   border: 3px solid #312431;
   border-radius: 10px;
   background-color: #312431;
-  transition: border 0.2s, border-radius 0.2s, background-color 0.2s, color 0.2s;
+  transition: border 0.2s, border-radius 0.0s, background-color 0.4s, color 0.4s;
 }
 
 .externalLink:active {
@@ -254,10 +254,22 @@ h1 {
   font-size: 4.3em;
 }
 
+.textBounder h3 {
+  margin: 0;
+  text-align: left;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
 .textBounder p {
   text-align: left;
   margin-top: 1em;
   padding-bottom: 1em;
+}
+
+.roleText {
+  float: right;
+  margin: 0;
 }
 
 .floatRightImg {
@@ -293,13 +305,13 @@ form {
 form p {
   margin: 0 auto;
   margin-top: 0.3em;
-  width: 500px;
   text-align: center;
+  font-size: 1.6em;
 }
 
 form input {
   width: 264px;
-  margin-top: 1em;
+  margin-top: 1.0em;
   font-family: 'Sniglet', cursive;
   font-size: 0.8em;
 }
@@ -310,14 +322,14 @@ form input[type=text] {
 }
 
 form input[type=submit]:default {
-  margin-top: 0.5em;
+  margin-top: 0.1em;
   font-family: 'Sniglet', cursive;
   font-size: 1.6em;
   color: #312431;
   background-color: #FFF7E8;
   border: 3px solid #312431;
   border-radius: 0px;
-  transition: border-radius 0.2s, background-color 0.2s, color 0.2s;
+  transition: border-radius 0.4s, background-color 0.4s, color 0.4s;
 }
 
 form input[type=submit]:hover {
@@ -325,11 +337,13 @@ form input[type=submit]:hover {
   background-color: #312431;
   border-radius: 10px;
   cursor: pointer;
-  transition: border-radius 0.2s, background-color: 0.2s, color 0.2s;
+  transition: border-radius 0.4s, background-color: 0.4s, color 0.4s;
 }
 
 label {
   font-size: 1.3em;
+  padding-left 1em;
+  padding-right: 1em;
 }
 
 /* ----------Blog Page---------- */

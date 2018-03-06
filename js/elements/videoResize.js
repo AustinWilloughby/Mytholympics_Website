@@ -4,7 +4,7 @@ let videoFrame = document.getElementById("videoFrame");
 let videoBorder = document.getElementById("videoBorder");
 
 const VIDEO_ASPECT_RATIO = 16 / 9;
-const VIDEO_MAX_WIDTH = 800;
+const VIDEO_MAX_WIDTH = 700;
 const VIDEO_BORDER_ASPECT_RATIO = 1068 / 725;
 const VIDEO_FRAME_TO_BORDER_SCALE = 1068 / 800;
 

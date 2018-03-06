@@ -8,7 +8,7 @@ window.setInterval(handleFooterPositioning, 500);
 
 //IFFE for before page loads
 ((function () {
-  createDefaultHeader("The Game");
+  createDefaultHeader("About Us");
   createDefaultFooter();
 })());
 
@@ -21,7 +21,6 @@ function handleOnLoad() {
 function handleScreenResize() {
   handleFooterPositioning();
   handleLogoResize();
-  handleVideoResize();
   handleTextResize();
   handleSeparatorResize();
 };

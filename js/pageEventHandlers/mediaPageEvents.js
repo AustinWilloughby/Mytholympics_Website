@@ -21,4 +21,5 @@ function handleScreenResize() {
   handleFooterPositioning();
   handleLogoResize();
   handleVideoResize();
+  handleSeparatorResize();
 };

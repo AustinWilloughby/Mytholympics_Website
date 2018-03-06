@@ -11,10 +11,10 @@ function createDefaultFooter() {
   footer.appendChild(footerContainer);
 
   let zaanLogo = document.createElement("img");
-  zaanLogo.setAttribute("src", "/img/ZAAN_Logo_Invert_NoText.svg");
+  zaanLogo.setAttribute("src", "/img/ZAAN/ZAAN_Logo_Invert_NoText.svg");
   zaanLogo.setAttribute("height", "60px");
   zaanLogo.setAttribute("alt", "ZAAN Games Logo");
-  zaanLogo.setAttribute("onerror", "this.src='./img/ZAAN_Logo_Invert_NoText_Small.png");
+  zaanLogo.setAttribute("onerror", "this.src='./img/ZAAN/ZAAN_Logo_Invert_NoText_Small.png");
   footerContainer.appendChild(zaanLogo);
 
   let emailParagraph = document.createElement("p");
