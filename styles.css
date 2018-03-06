@@ -226,18 +226,18 @@ h1 {
   border: 3px solid transparent;
   border-bottom: 3px solid #312431;
   border-radius: 0px;
-  transition: border 0.2s, border-radius 0.2s;
+  transition: border 0.2s, border-radius 0.2s, color 0.2s;
 }
 
 /* mouse over link */
 
 .externalLink:hover {
-  color: #312431;
+  color: #FFF7E8;
   padding: 0.3em;
   border: 3px solid #312431;
   border-radius: 10px;
-  background-color: #EDD29E;
-  transition: border 0.2s, border-radius 0.2s, background-color 0.2s;
+  background-color: #312431;
+  transition: border 0.2s, border-radius 0.2s, background-color 0.2s, color 0.2s;
 }
 
 .externalLink:active {
@@ -312,18 +312,20 @@ form input[type=text] {
 form input[type=submit]:default {
   margin-top: 0.5em;
   font-family: 'Sniglet', cursive;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #312431;
   background-color: #FFF7E8;
   border: 3px solid #312431;
   border-radius: 0px;
-  transition: border-radius 0.2s, background-color 0.2s;
+  transition: border-radius 0.2s, background-color 0.2s, color 0.2s;
 }
 
 form input[type=submit]:hover {
-  background-color: #EDD29E;
+  color: #FFF7E8;
+  background-color: #312431;
   border-radius: 10px;
-  transition: border-radius 0.2s, background-color: 0.2s;
+  cursor: pointer;
+  transition: border-radius 0.2s, background-color: 0.2s, color 0.2s;
 }
 
 /* ----------Blog Page---------- */
