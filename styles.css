@@ -328,6 +328,10 @@ form input[type=submit]:hover {
   transition: border-radius 0.2s, background-color: 0.2s, color 0.2s;
 }
 
+label {
+  font-size: 1.3em;
+}
+
 /* ----------Blog Page---------- */
 
 #postWrapper h4 {
