@@ -135,7 +135,7 @@ footer {
 }
 
 footer p {
-  font-size: 1em;
+  font-size: 1.04em;
   margin: 0;
   margin-top: .5em;
   padding: 0;
@@ -170,6 +170,7 @@ footer img {
 
 #logoCanvas {
   margin-top: 4em;
+  margin-bottom: 6em;
 }
 
 
@@ -221,16 +222,22 @@ h1 {
 .externalLink:visited {
   color: #312431;
   text-decoration: none;
-  border-bottom: 0px solid transparent;
-  transition: border-bottom 0.2s;
+  padding: 0.3em;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #312431;
+  border-radius: 0px;
+  transition: border 0.2s, border-radius 0.2s;
 }
 
 /* mouse over link */
 
 .externalLink:hover {
   color: #312431;
-  border-bottom: 4px solid #312431;
-  transition: border-bottom 0.2s;
+  padding: 0.3em;
+  border: 3px solid #312431;
+  border-radius: 10px;
+  background-color: #EDD29E;
+  transition: border 0.2s, border-radius 0.2s, background-color 0.2s;
 }
 
 .externalLink:active {
@@ -242,9 +249,9 @@ h1 {
 }
 
 .textBounder h2 {
+  margin-top: 0px;
   text-align: center;
-  margin-top: 1em;
-  font-size: 4em;
+  font-size: 4.3em;
 }
 
 .textBounder p {
@@ -271,6 +278,52 @@ h1 {
   width: 700px;
   margin-top: 6em;
   margin-bottom: 6em;
+}
+
+
+
+
+/* ----------Email Form---------- */
+
+form {
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+form p {
+  margin: 0 auto;
+  margin-top: 0.3em;
+  width: 500px;
+  text-align: center;
+}
+
+form input {
+  width: 264px;
+  margin-top: 1em;
+  font-family: 'Sniglet', cursive;
+  font-size: 0.8em;
+}
+
+form input[type=text] {
+  outline: 3px solid #312431;
+  width: 255px;
+}
+
+form input[type=submit]:default {
+  margin-top: 0.5em;
+  font-family: 'Sniglet', cursive;
+  font-size: 2em;
+  color: #312431;
+  background-color: #FFF7E8;
+  border: 3px solid #312431;
+  border-radius: 0px;
+  transition: border-radius 0.2s, background-color 0.2s;
+}
+
+form input[type=submit]:hover {
+  background-color: #EDD29E;
+  border-radius: 10px;
+  transition: border-radius 0.2s, background-color: 0.2s;
 }
 
 /* ----------Blog Page---------- */
