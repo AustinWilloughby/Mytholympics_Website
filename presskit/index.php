@@ -653,7 +653,7 @@ echo '						</div>
 
 					<hr>
 
-					<p><a href="http://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>) - also thanks to <a href="sheet.php?p=credits">these fine folks</a></p>
+					<p><a href="http://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>) - also thanks to <a href="https://www.mytholympics.com/presskit/credits.html">these fine folks</a></p>
 				</div>
 			</div>
 		</div>
