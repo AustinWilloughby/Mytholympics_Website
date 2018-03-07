@@ -8,19 +8,19 @@ let pagesAndLinks = [
   },
   //{
   //  name: "Media",
-  //  link: "./media.html"
+  //  link: "./media"
   //},
   //{
   //  name: "Dev Blog",
-  //  link: "./blog.html"
+  //  link: "./blog"
   //},
   {
     name: "About Us",
-    link: "./about.html"
+    link: "./about"
   },
   {
     name: "Press",
-    link: "./presskit/index.php"
+    link: "./presskit/index"
   },
 ];
 
