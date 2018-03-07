@@ -313,6 +313,11 @@ h1 {
   margin-bottom: 8em;
 }
 
+.memberBio .externalLink {
+  padding: .05em;
+  ;
+}
+
 
 /* ----------Email Form---------- */
 
