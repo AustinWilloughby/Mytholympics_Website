@@ -292,7 +292,22 @@ h1 {
   margin-bottom: 6em;
 }
 
+.floatRightMemberImg {
+  float: right;
+  width: 200px;
+  margin-left: 0.8em;
+  border: 3px solid #312431;
+  border-radius: 30px;
+}
 
+
+.floatLeftMemberImg {
+  float: left;
+  width: 190px;
+  margin-right: 0.8em;
+  border: 3px solid #312431;
+  border-radius: 30px;
+}
 
 
 /* ----------Email Form---------- */
