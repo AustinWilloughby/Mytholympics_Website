@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- example file containing base tags -->
+
+<game>
+  <title>ZAAN Games</title>
+  <founding-date>August, 2017</founding-date>
+  <website>https://www.mytholympics.com/</website>
+  <based-in>Rochester, New York</based-in>
+
+  <press-contact>austin@mytholympics.com</press-contact>
+  <phone>N/A</phone>
+  <address>
+		<line></line>
+		<line></line>
+		<line></line>
+	</address>
+
+  <socials>
+    <social>
+      <name>YouTube</name>
+      <link>https://www.youtube.com/channel/UCA9sH37Sxs2tPHC6I77qL7g</link>
+    </social>
+    <social>
+      <name>Development Blog</name>
+      <link>https://mytholympics.tumblr.com/</link>
+    </social>
+  </socials>
+
+  <description>
+    At ZAAN Games, we strive to create polished and compelling game experiences for our players. Games are meant to be fun and bring people together, and that defines the essence of what we hope to deliver. If we can make people laugh together, or make strangers become friends, than we have done our job.
+  </description>
+
+  <histories>
+    <history>
+      <header>Early Days</header>
+      <text>ZAAN Games is a group of four dedicated game developers. We met in 2016 during our first year studying Graduate Game Design and Development at the Rochester Institute of Technology. We spent many months meeting everyone in the program, but slowly gravitated together as it became clear that we shared a common vision of what makes a great game. Some opportunities arose to make polished experiences together, but we all knew we wanted to work on something bigger.</text>
+    </history>
+    <history>
+      <header>Capstone and Beyond</header>
+      <text>At the start of our second year, we had to separate into groups for a year long capstone project. Immediately we congregated, and ZAAN Games was formed. Our current project, Mytholympics, is a culmination of all our hard work and countless efforts. We have spent many sleepless nights obsessing over every detail to make the game as enjoyable and polished as possible. Every hour of sleep lost is worth it to watch players get lost in the excitement of the game.</text>
+    </history>
+  </histories>
+
+  <trailers>
+    <trailer>
+      <name>Mytholympics Teaser Trailer</name>
+      <youtube>R1isv9E8uLM</youtube>
+    </trailer>
+  </trailers>
+
+  <!-- <awards>
+    <award>
+      <description>Winner in this highly relevant contest.</description>
+      <info>Award Location, 20 October, 1989</info>
+    </award>
+    <award>
+      <description>Nomination for this prestigious award.</description>
+      <info>Award Ceremony, 4 December, 1991</info>
+    </award>
+    <award>
+      <description>Winner in this highly relevant contest.</description>
+      <info>Award Location, 20 October, 1989</info>
+    </award>
+    <award>
+      <description>Nomination for this prestigious award.</description>
+      <info>Award Ceremony, 4 December, 1991</info>
+    </award>
+  </awards>
+
+  <quotes>
+    <quote>
+      <description>This is a rather insignificant quote by a highly important person.</description>
+      <name>Person Name</name>
+      <website>Website</website>
+      <link>http://www.website.com/</link>
+    </quote>
+    <quote>
+      <description>An extremely positive quote from a rather insignificant person. Also great.</description>
+      <name>Some Guy</name>
+      <website>This Page Is Visited By 12 Visitors A Month</website>
+      <link>http://geocities.blog.com/</link>
+    </quote>
+    <quote>
+      <description>I pretend to love this game even though I do not actually understand it.</description>
+      <name>Pretentious Bastard</name>
+      <website>Artsy Page</website>
+      <link>http://art.tumblr.com/</link>
+    </quote>
+    <quote>
+      <description>HOLY SHIT SO AMAZING</description>
+      <name>Caps Guy</name>
+      <website>Angry Review</website>
+      <link>http://thispage.net/angrytube</link>
+    </quote>
+  </quotes> -->
+
+  <!--<press-can-request-copy>TRUE</press-can-request-copy>-->
+  <!-- can be true or false -->
+  <!-- <monetization-permission>monetize</monetization-permission>-->
+  <!-- can be: 	false (no video allowed),
+																			 	ask (permission on case-per-case basis),
+																			 	non-commercial (no monetization allowed),
+																			 	monetize (full permission) -->
+  <!--<additionals>
+    <additional>
+      <title>Company Link #1</title>
+      <description>This link is a link that might be useful. You can check it out at</description>
+      <link>http://somemusicsite.com/thislink</link>
+    </additional>
+  </additionals>-->
+
+  <credits>
+    <credit>
+      <person>Zhehui Qian</person>
+      <website>https://www.linkedin.com/in/zhehui-qian-8b625813b</website>
+      <role>Artist, Art Director</role>
+    </credit>
+    <credit>
+      <person>Akshay Rachapudi</person>
+      <website>https://akshayrachapudi.com/</website>
+      <role>Developer, Technical Lead</role>
+    </credit>
+    <credit>
+      <person>Austin Willoughby</person>
+      <website>http://austinwilloughby.com/</website>
+      <role>Developer, Sound Designer, Webmaster</role>
+    </credit>
+    <credit>
+      <person>Nathaniel Blair</person>
+      <website>https://nathaniel-blair.com/</website>
+      <role>Developer, Project Manager</role>
+    </credit>
+    <credit>
+      <person>Christoper Carlone</person>
+      <website>https://www.christophercarlone.com/</website>
+      <role>Collaborator: Composer</role>
+    </credit>
+    <credit>
+      <person>Guoxiang Zhao</person>
+      <role>Collaborator: Animator</role>
+    </credit>
+    <credit>
+      <person>Yingying Tang</person>
+      <role>Collaborator: Character Designer</role>
+    </credit>
+  </credits>
+
+  <contacts>
+    <contact>
+      <name>Inquiries</name>
+      <mail>austin@mytholympics.com</mail>
+    </contact>
+    <contact>
+      <name>Web</name>
+      <link>https://www.mytholympics.com/</link>
+    </contact>
+  </contacts>
+</game>

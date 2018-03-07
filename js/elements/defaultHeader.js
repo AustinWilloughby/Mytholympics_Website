@@ -6,21 +6,21 @@ let pagesAndLinks = [
     name: "The Game",
     link: "./"
   },
-  {
-    name: "Media",
-    link: "./media.html"
-  },
-  {
-    name: "Dev Blog",
-    link: "./blog.html"
-  },
-  {
-    name: "Presskit",
-    link: "./presskit.html"
-  },
+  //{
+  //  name: "Media",
+  //  link: "./media.html"
+  //},
+  //{
+  //  name: "Dev Blog",
+  //  link: "./blog.html"
+  //},
   {
     name: "About Us",
     link: "./about.html"
+  },
+  {
+    name: "Press",
+    link: "./presskit/index.php"
   },
 ];
 
@@ -37,11 +37,17 @@ function createDefaultHeader(currentPageName) {
       let linkAnchor = document.createElement("a");
       linkAnchor.setAttribute("href", pagesAndLinks[i].link);
       linkAnchor.setAttribute("class", "navLink");
+
+      if (pagesAndLinks[i].name === "Press") {
+        linkAnchor.setAttribute("target", "_blank");
+      }
+
       linkHeader.append(linkAnchor);
       linkAnchor.append(tabText);
 
     } else {
       linkHeader.setAttribute("class", "currentPage");
+
       linkHeader.append(tabText);
     }
 
