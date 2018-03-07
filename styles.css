@@ -267,11 +267,6 @@ h1 {
   padding-bottom: 1em;
 }
 
-.roleText {
-  float: right;
-  margin: 0;
-}
-
 .floatRightImg {
   float: right;
   width: 120px;
@@ -315,7 +310,19 @@ h1 {
 
 .memberBio .externalLink {
   padding: .05em;
-  ;
+
+}
+
+.roleText {
+  text-align: right;
+  font-size: 1.4em;
+  margin: 0;
+  padding-top: 1.6em;
+  margin-bottom: 1.2em;
+}
+
+.memberName {
+  float: left;
 }
 
 

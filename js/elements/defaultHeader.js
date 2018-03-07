@@ -35,7 +35,11 @@ function createDefaultHeader(currentPageName) {
 
     if (pagesAndLinks[i].name !== currentPageName) {
       let linkAnchor = document.createElement("a");
-      linkAnchor.setAttribute("href", pagesAndLinks[i].link);
+      if (window.location.href.includes("127.0.0") && pagesAndLinks[i].name !== "The Game") {
+        linkAnchor.setAttribute("href", pagesAndLinks[i].link + ".html");
+      } else {
+        linkAnchor.setAttribute("href", pagesAndLinks[i].link);
+      }
       linkAnchor.setAttribute("class", "navLink");
 
       if (pagesAndLinks[i].name === "Press") {
