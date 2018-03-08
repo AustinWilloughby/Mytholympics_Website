@@ -4,8 +4,8 @@ let logoCanvas = document.getElementById("logoCanvas");
 let logoCtx = logoCanvas.getContext("2d");
 
 const LOGO_CANVAS_ASPECT_RATIO = 2.6;
-const LOGO_MAX_WIDTH = 1000;
-const MAX_CANVAS_HEIGHT = (LOGO_MAX_WIDTH * 1.3) / LOGO_CANVAS_ASPECT_RATIO;
+let LOGO_MAX_WIDTH = 1000;
+let MAX_CANVAS_HEIGHT = (LOGO_MAX_WIDTH * 1.3) / LOGO_CANVAS_ASPECT_RATIO;
 
 let logo;
 let logoDrawingHeight = 0;
@@ -15,11 +15,6 @@ let logoDrawingHeight = 0;
   //Resize the logo canvas
   handleLogoResize();
 
-  //Check if we are on the main page. If not let us click the logo to return there.
-  let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
-  if (!fileName.includes("index") && fileName !== "/" && fileName != "") {
-    logoCanvas.addEventListener('click', detectLogoClick);
-  }
 
   //Load the logo in and set up the animation loop
   logo = new Image();
@@ -29,6 +24,17 @@ let logoDrawingHeight = 0;
     handleScreenResize();
   }, false);
 
+  //Check if we are on the main page. If not let us click the logo to return there.
+  let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+
+  if (!fileName.includes("index") && fileName !== "/" && fileName != "") {
+    logoCanvas.addEventListener('click', detectLogoClick);
+    LOGO_MAX_WIDTH = 800;
+    MAX_CANVAS_HEIGHT = 310;
+    logoCanvas.style.marginTop = "5em";
+    logoCanvas.style.marginBottom = "3em";
+    handleLogoResize();
+  }
   logo.src = "/img/title.png";
 })());
 
