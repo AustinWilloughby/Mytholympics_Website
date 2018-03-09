@@ -2,6 +2,8 @@
 
 let footer;
 
+window.setInterval(handleFooterPositioning, 200);
+
 //Creates the default footer to be used at the bottom of the page.
 function createDefaultFooter() {
   footer = document.createElement("footer");

@@ -4,7 +4,6 @@
 window.onload = handleOnLoad;
 window.onresize = handleScreenResize;
 window.onfocus = handleScreenResize;
-window.setInterval(handleFooterPositioning, 500);
 
 //IFFE for before page loads
 ((function () {

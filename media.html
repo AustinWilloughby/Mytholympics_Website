@@ -19,28 +19,37 @@
 
 <body>
   <script src="js/elements/forceHttps.js"></script>
+  <script src=js/elements/defaultHeader.js></script>
+
   <div class="centerWrapper">
     <canvas id="logoCanvas"></canvas>
 
-    <div class="textBounder">
-      <h2>Media Page</h2>
-      <img class="sectionSeparator" src="img/sectionSeparator.png">
-
+    <div id="imageGallery" class="gallery">
+      <h2>Screenshots</h2>
+      <div id="imageStacker">
+        <img id="topImage" class="screenshot">
+        <img id="bottomImage" class="screenshot">
+        <button id="galleryLeft" class="galleryButton">&#10094;</button>
+        <button id="galleryRight" class="galleryButton">&#10095;</button>
+      </div>
     </div>
-    <h2>Check Out Our Latest Build Video!</h2>
+    <img class="sectionSeparator" src="img/sectionSeparator.png">
+
+    <h2 class="frontPageVideo">Check out our Latest Build Video!</h2>
     <div id="stackingContainer" class="stackingContainer">
       <div id="stackingParent" class="stackingParent">
         <img id="videoBorder" class="stackingTop" src="img/panelBorder.png" />
-        <iframe id="videoFrame" class="stackingBottom" src="https://www.youtube.com/embed/g5iaMhOIE84" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="videoFrame" class="stackingBottom" src="https://www.youtube.com/embed/g5iaMhOIE84?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
 
-    <p><a class="externalLink" href="https://www.youtube.com/channel/UCA9sH37Sxs2tPHC6I77qL7g" target="_blank">Click Here To Visit Our YouTube Channel</a></p>
+    <p class="paddedBottom"><a class="externalLink" href="https://www.youtube.com/channel/UCA9sH37Sxs2tPHC6I77qL7g" target="_blank">Click Here To Visit Our YouTube Channel</a></p>
   </div>
 
-  <script src=js/elements/defaultHeader.js></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/elements/animatingLogo.js"></script>
   <script src="js/elements/defaultFooter.js"></script>
+  <script src="js/elements/screenshotGallery.js"></script>
   <script src="js/elements/videoResize.js"></script>
   <script src="js/elements/sectionSeparatorResize.js"></script>
   <script src="js/pageEventHandlers/mediaPageEvents.js"></script>

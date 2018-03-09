@@ -22,4 +22,5 @@ function handleScreenResize() {
   handleLogoResize();
   handleVideoResize();
   handleSeparatorResize();
+  handleGalleryResize();
 };
