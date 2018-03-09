@@ -35,6 +35,7 @@ body {
 #postWrapper {
   margin: auto;
   width: 542px;
+  margin-bottom: 10em;
 }
 
 .textBounder {
@@ -181,7 +182,7 @@ footer img {
   height: 800px;
   width: 1068px;
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   text-align: center;
 }
 
@@ -261,6 +262,12 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+.textBounder h5 {
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+}
+
 .textBounder p {
   text-align: left;
   margin-top: 1em;
@@ -323,6 +330,10 @@ h1 {
 
 .memberName {
   float: left;
+}
+
+.frontPageVideo {
+  font-size: 2.3em;
 }
 
 

@@ -6,14 +6,14 @@ let pagesAndLinks = [
     name: "The Game",
     link: "./"
   },
-  //{
-  //  name: "Media",
-  //  link: "./media"
-  //},
-  //{
-  //  name: "Dev Blog",
-  //  link: "./blog"
-  //},
+  {
+    name: "Media",
+    link: "./media"
+  },
+  {
+    name: "Dev Blog",
+    link: "./blog"
+  },
   {
     name: "About Us",
     link: "./about"
@@ -35,7 +35,9 @@ function createDefaultHeader(currentPageName) {
 
     if (pagesAndLinks[i].name !== currentPageName) {
       let linkAnchor = document.createElement("a");
-      if (window.location.href.includes("127.0.0") && pagesAndLinks[i].name !== "The Game") {
+      if (window.location.href.includes("127.0.0") &&
+        pagesAndLinks[i].name !== "The Game" &&
+        pagesAndLinks[i].name !== "Press") {
         linkAnchor.setAttribute("href", pagesAndLinks[i].link + ".html");
       } else {
         linkAnchor.setAttribute("href", pagesAndLinks[i].link);
