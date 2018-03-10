@@ -23,4 +23,5 @@ window.onload = handleOnLoad;
 
 function handleOnLoad() {
   handleFooterPositioning();
+  handleHeaderResize();
 }

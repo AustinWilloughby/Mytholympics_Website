@@ -1,7 +1,10 @@
 "use strict";
 
+
 let header;
-let pagesAndLinks = [
+let navLinks = [];
+const MAX_HEADER_SIZE = 2000;
+const pagesAndLinks = [
   {
     name: "The Game",
     link: "./"
@@ -31,6 +34,7 @@ function createDefaultHeader(currentPageName) {
 
   for (let i = 0; i < pagesAndLinks.length; i++) {
     let linkHeader = document.createElement("h1");
+    navLinks.push(linkHeader);
     let tabText = document.createTextNode(pagesAndLinks[i].name);
 
     if (pagesAndLinks[i].name !== currentPageName) {
@@ -61,4 +65,17 @@ function createDefaultHeader(currentPageName) {
   }
 
   document.body.append(header);
-}
+};
+
+function handleHeaderResize() {
+  let bodyWidth = document.body.clientWidth;
+
+  if (bodyWidth < MAX_HEADER_SIZE) {
+    let marginSize = (bodyWidth / MAX_HEADER_SIZE) + "em";
+
+    for (let i = 0; i < navLinks.length; i++) {
+      navLinks[i].style.marginLeft = marginSize;
+      navLinks[i].style.marginRight = marginSize;
+    }
+  }
+};

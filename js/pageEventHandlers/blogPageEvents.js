@@ -24,5 +24,6 @@ function handleOnLoad() {
 //Handling multiple events
 function handleScreenResize() {
   handleFooterPositioning();
+  handleHeaderResize();
   handleLogoResize();
 };
