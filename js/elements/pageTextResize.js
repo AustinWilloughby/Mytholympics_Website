@@ -1,4 +1,4 @@
-const MAX_TEXT_WIDTH = 700;
+const MAX_TEXT_WIDTH = 800;
 
 function handleTextResize() {
   let textBounders = document.getElementsByClassName("textBounder");

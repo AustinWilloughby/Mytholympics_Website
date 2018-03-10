@@ -407,6 +407,8 @@ h1 {
 form {
   text-align: center;
   padding-bottom: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 form p {

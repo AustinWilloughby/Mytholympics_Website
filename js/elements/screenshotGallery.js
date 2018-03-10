@@ -11,6 +11,9 @@ let currentImageIndex = 0;
 let autoAdvanceId;
 let canAdvance = true;
 
+const REQUIRED_SWIPE_OFFSET = 100;
+let touchStartPos;
+
 let imageLinks = ["presskit/images/beachBuffet.png",
                   "presskit/images/characterSelect.png",
                   "presskit/images/grappleball.png",
@@ -25,6 +28,7 @@ let imageLinks = ["presskit/images/beachBuffet.png",
   shuffle(imageLinks);
   switchImage(0);
   topImage.onload = handleGalleryResize();
+  autoAdvanceId = setInterval(autoAdvance, 4000);
 
   leftButton.onclick = function () {
     if (canAdvance === true) {
@@ -43,7 +47,40 @@ let imageLinks = ["presskit/images/beachBuffet.png",
       autoAdvanceId = setInterval(autoAdvance, 4000);
     }
   };
-  autoAdvanceId = setInterval(autoAdvance, 4000);
+
+
+  gallery.addEventListener("touchstart", function (event) {
+    leftButton.style.visibility = "hidden";
+    rightButton.style.visibility = "hidden";
+    if (event.touches.length === 1) {
+      touchStartPos = event.touches.item(0).clientX;
+    } else {
+      start = null;
+    }
+  });
+
+  gallery.addEventListener("touchend", function (event) {
+    if (touchStartPos) {
+      let end = event.changedTouches.item(0).clientX;
+
+      if (end > touchStartPos + REQUIRED_SWIPE_OFFSET) {
+        if (canAdvance === true) {
+          canAdvance = false;
+          switchImage(-1, 300);
+          clearInterval(autoAdvanceId);
+          autoAdvanceId = setInterval(autoAdvance, 4000);
+        }
+      } else if (end < touchStartPos - REQUIRED_SWIPE_OFFSET) {
+        if (canAdvance === true) {
+          canAdvance = false;
+          switchImage(1, 300);
+          clearInterval(autoAdvanceId);
+          autoAdvanceId = setInterval(autoAdvance, 4000);
+        }
+      }
+    }
+  });
+
 })());
 
 function switchImage(advanceAmount, fadeSpeed) {
@@ -83,7 +120,7 @@ function handleGalleryResize() {
   leftButton.style.left = "10px";
   leftButton.style.top = ((topImage.height) / 2 - 25) + "px";
   rightButton.style.top = leftButton.style.top
-  rightButton.style.left = (topImage.width - 85) + "px";
+  rightButton.style.left = topImage.width - 82 + "px";
 };
 
 //https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
