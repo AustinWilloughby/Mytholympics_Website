@@ -16,10 +16,12 @@ let touchStartPos;
 
 let imageLinks = ["presskit/images/beachBuffet.png",
                   "presskit/images/characterSelect.png",
+                  "presskit/images/mainMenu.png",
                   "presskit/images/grappleball.png",
                   "presskit/images/pizzaParty.png",
                   "presskit/images/scoreScreen.png",
                   "presskit/images/shipSmash.png",
+                  "presskit/images/teamSelection.png",
                   "presskit/images/torpedoTrouble.png"
                  ];
 
