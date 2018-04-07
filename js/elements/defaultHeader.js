@@ -52,19 +52,19 @@ function createDefaultHeader(currentPageName) {
         linkAnchor.setAttribute("target", "_blank");
       }
 
-      linkHeader.append(linkAnchor);
-      linkAnchor.append(tabText);
+      linkHeader.appendChild(linkAnchor);
+      linkAnchor.appendChild(tabText);
 
     } else {
       linkHeader.setAttribute("class", "currentPage");
 
-      linkHeader.append(tabText);
+      linkHeader.appendChild(tabText);
     }
 
-    header.append(linkHeader);
+    header.appendChild(linkHeader);
   }
 
-  document.body.append(header);
+  document.body.appendChild(header);
 };
 
 function handleHeaderResize() {

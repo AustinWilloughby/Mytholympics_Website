@@ -29,7 +29,7 @@ function createDefaultFooter() {
   copyrightHeader.appendChild(copyrightText);
   footerContainer.appendChild(copyrightHeader);
 
-  document.body.append(footer);
+  document.body.appendChild(footer);
 
   handleFooterPositioning();
 }

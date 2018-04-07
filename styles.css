@@ -96,14 +96,15 @@ header h2 {
   text-decoration: none;
   border: 5px solid transparent;
   border-radius: 9px;
-  transition: border 0.3s, color 0.1s;
+  transition: border 0.3s, color 0.1s, background 0.3s;
+  background: transparent;
 }
 
 .navLink:hover {
   color: #FFF7E8;
-  border: 5px solid #312431;
   border-radius: 9px;
-  transition: border 0.3s, color 0.1s;
+  transition: border 0.3s, color 0.1s, background 0.3s;
+  background: #312431;
 }
 
 .navLink:active {
@@ -115,6 +116,8 @@ header h2 {
   text-decoration: none;
   border: 5px solid #312431;
   border-radius: 9px;
+  height: 52px;
+  background: #312431;
 }
 
 /* ----------Footer---------- */
