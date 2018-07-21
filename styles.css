@@ -282,18 +282,20 @@ h1 {
   padding-bottom: 1em;
 }
 
-.floatRightImg {
+.floatRightCharImg {
   float: right;
   width: 120px;
   margin-left: 0.4em;
+  visibility: hidden;
 }
 
 
-.floatLeftImg {
+.floatLeftCharImg {
   float: left;
   width: 120px;
-  margin-right: 0.4em;
+  padding-left: 0.8em;
   transform: scale(-1, 1);
+  visibility: hidden;
 }
 
 .sectionSeparator {

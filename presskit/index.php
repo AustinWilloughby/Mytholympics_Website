@@ -500,30 +500,30 @@ if( !file_exists('images/logo.png') && !file_exists('images/icon.png')) {
 
 echo '					<hr>';
 
-//if( count( $awards > 0 ) )
-//{
-//	echo('<h2 id="awards">'. tl('Awards & Recognition') .'</h2>
-//					<ul>');
-//
-//for( $i = 0; $i < count($awards); $i++ )
-//{
-//	$description = $info = "";
-//
-//	foreach( $awards[$i]['award']->children() as $child )
-//	{
-//		if( $child->getName() == "description" ) {
-//			$description = $child;
-//		} else if( $child->getName() == "info" ) {
-//			$info = $child;
-//		}
-//	}
-//
-//	echo '<li>"'.$description.'" - <cite>'.$info.'</cite></li>';
-//}
-//
-//echo('</ul><hr>');
-//}
-//
+if( count( $awards > 0 ) )
+{
+	echo('<h2 id="awards">'. tl('Awards & Recognition') .'</h2>
+					<ul>');
+
+for( $i = 0; $i < count($awards); $i++ )
+{
+	$description = $info = "";
+
+	foreach( $awards[$i]['award']->children() as $child )
+	{
+		if( $child->getName() == "description" ) {
+			$description = $child;
+		} else if( $child->getName() == "info" ) {
+			$info = $child;
+		}
+	}
+
+	echo '<li>"'.$description.'" - <cite>'.$info.'</cite></li>';
+}
+
+echo('</ul><hr>');
+}
+
 //if( count($quotes) > 0 )
 //{
 //	echo '					<h2 id="quotes">'. tl('Selected Articles') .'</h2>

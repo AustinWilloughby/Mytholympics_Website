@@ -48,25 +48,13 @@
     </trailer>
   </trailers>
 
-  <!-- <awards>
+  <awards>
     <award>
-      <description>Winner in this highly relevant contest.</description>
-      <info>Award Location, 20 October, 1989</info>
-    </award>
-    <award>
-      <description>Nomination for this prestigious award.</description>
-      <info>Award Ceremony, 4 December, 1991</info>
-    </award>
-    <award>
-      <description>Winner in this highly relevant contest.</description>
-      <info>Award Location, 20 October, 1989</info>
-    </award>
-    <award>
-      <description>Nomination for this prestigious award.</description>
-      <info>Award Ceremony, 4 December, 1991</info>
+      <description>3rd Place, RPI GameFest 2018</description>
+      <info>Troy, New York. 5 May, 2018</info>
     </award>
   </awards>
-
+  <!--
   <quotes>
     <quote>
       <description>This is a rather insignificant quote by a highly important person.</description>

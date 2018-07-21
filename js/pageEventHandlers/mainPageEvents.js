@@ -7,8 +7,9 @@ window.onfocus = handleScreenResize;
 
 //IFFE for before page loads
 ((function () {
-  createDefaultHeader("The Game");
   createDefaultFooter();
+  createDefaultHeader("The Game");
+  populateRandomCharacters();
 })());
 
 //Handles the loading of the main page
