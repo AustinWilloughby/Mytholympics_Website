@@ -45,7 +45,11 @@ function createDefaultHeader(currentPageName) {
         var link = "127.0.0.1:60804" + pagesAndLinks[i].link + ".html";
         linkAnchor.setAttribute("href", "javascript:delay('" + pagesAndLinks[i].link + ".html')");
       } else {
-        linkAnchor.setAttribute("href", "javascript:delay('" + pagesAndLinks[i].link + "')");
+        if (pagesAndLinks[i].name != "Press") {
+          linkAnchor.setAttribute("href", "javascript:delay('" + pagesAndLinks[i].link + "')");
+        } else {
+          linkAnchor.setAttribute("href", pagesAndLinks[i].link);
+        }
       }
       linkAnchor.setAttribute("class", "navLink");
 
