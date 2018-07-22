@@ -31,7 +31,15 @@ function populateRandomCharacters() {
   img3.alt = link.split('/')[2].slice(0, -4);
 
 
-  img1.style.visibility = "visible";
-  img2.style.visibility = "visible";
-  img3.style.visibility = "visible";
+  img1.onload = function () {
+    img1.style.visibility = "visible";
+  }
+
+  img2.onload = function () {
+    img2.style.visibility = "visible";
+  }
+
+  img3.onload = function () {
+    img3.style.visibility = "visible";
+  }
 };

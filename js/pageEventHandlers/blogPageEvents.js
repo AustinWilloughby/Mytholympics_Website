@@ -9,6 +9,8 @@ window.onfocus = handleScreenResize;
 ((function () {
   createDefaultHeader("Dev Blog");
   createDefaultFooter();
+  handleScreenResize();
+  document.getElementById("fadeinPage").style.opacity = 1;
 })());
 
 //Handles the loading of the blog page

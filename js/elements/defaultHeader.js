@@ -7,23 +7,23 @@ const MAX_HEADER_SIZE = 2000;
 const pagesAndLinks = [
   {
     name: "The Game",
-    link: "./"
+    link: "/"
   },
   {
     name: "Media",
-    link: "./media"
+    link: "/media"
   },
   {
     name: "Dev Blog",
-    link: "./blog"
+    link: "/blog"
   },
   {
     name: "About Us",
-    link: "./about"
+    link: "/about"
   },
   {
     name: "Press",
-    link: "./presskit/index"
+    link: "/presskit/index"
   },
 ];
 
@@ -42,9 +42,10 @@ function createDefaultHeader(currentPageName) {
       if (window.location.href.includes("127.0.0") &&
         pagesAndLinks[i].name !== "The Game" &&
         pagesAndLinks[i].name !== "Press") {
-        linkAnchor.setAttribute("href", pagesAndLinks[i].link + ".html");
+        var link = "127.0.0.1:60804" + pagesAndLinks[i].link + ".html";
+        linkAnchor.setAttribute("href", "javascript:delay('" + pagesAndLinks[i].link + ".html')");
       } else {
-        linkAnchor.setAttribute("href", pagesAndLinks[i].link);
+        linkAnchor.setAttribute("href", "javascript:delay('" + pagesAndLinks[i].link + "')");
       }
       linkAnchor.setAttribute("class", "navLink");
 
@@ -78,4 +79,11 @@ function handleHeaderResize() {
       navLinks[i].style.marginRight = marginSize;
     }
   }
+};
+
+function delay(URL) {
+  document.getElementById("fadeinPage").style.opacity = 0;
+  setTimeout(function () {
+    window.location = URL;
+  }, 300);
 };

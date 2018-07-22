@@ -9,11 +9,13 @@ window.onfocus = handleScreenResize;
 ((function () {
   createDefaultHeader("About Us");
   createDefaultFooter();
+  handleScreenResize();
 })());
 
 //Handles the loading of the main page
 function handleOnLoad() {
   handleScreenResize();
+  document.getElementById("fadeinPage").style.opacity = 1;
 }
 
 //Handling multiple events
